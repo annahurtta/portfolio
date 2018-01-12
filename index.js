@@ -4,7 +4,6 @@ var app = {
     $('.li_nav').click(function(e){
       e.preventDefault();
       var clicked_nav = $(this).data('navigate');
-      console.log(clicked_nav);
        $('html, body').animate({
         scrollTop: $('.' + clicked_nav).offset().top -50
       });
