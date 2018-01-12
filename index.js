@@ -15,4 +15,7 @@ var app = {
 }
 $(document).ready(function () {
   app.init();
+  $('.navbar-nav li.trigger-collapse a').click(function(event) {
+    $('.navbar-collapse').collapse('hide');
+  });
 });
